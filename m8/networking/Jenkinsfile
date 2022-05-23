@@ -26,7 +26,7 @@ pipeline {
                 dir('m4/consul/config/'){
                     // sh 'curl -o c.zip https://releases.hashicorp.com/consul/1.12.0/consul_1.12.0_linux_amd64.zip'
                     // sh 'unzip c.zip'
-                    sh 'pwd && ls -la consul-config'
+                    sh 'pwd && ls -la consul-config.hcl'
                     // sh './consul agent -bootstrap -config-file="consul-config.hcl" -bind="127.0.0.1"'
                 }
                 dir('m8/networking/'){
